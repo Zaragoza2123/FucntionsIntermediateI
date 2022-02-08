@@ -15,11 +15,14 @@ x[1][0]=15
 
 #2.
 students[0]['last_name'] = 'Bryant'
+print(students[0]['last_name'])
 #3.
 sports_directory['soccer'][0] = 'Andres'
+print(sports_directory['soccer'][0])
 #4 
 z[0]['y']=30
-
+print(z[0]['y'])
+print("~~~~~~~~~~~~~~~~~~")
 #2 Iterate through a list of dictionaries 
 students = [
         {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -32,7 +35,7 @@ def iterateDictionary(some_list):
         print("first_name - " + students[x]['first_name'] + ", last_name - " + students[x]['last_name'])
 
 iterateDictionary(students)
-
+print("~~~~~~~~~~~~~~~~~~")
 #3 Get Values From a List of Dictionary 
 students = [
         {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -49,7 +52,7 @@ def iterateDictionary2(key_name, some_list):
 
 iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
-
+print("~~~~~~~~~~~~~~~~~~")
 #4. Iterate Through a Dictionary With List Values
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
@@ -57,7 +60,7 @@ dojo = {
 }
 
 def printInfo(some_dict):
-    
+
     for x in some_dict:
         print(f"{len(some_dict[x])} {x}")
         for i in range(0,len(some_dict[x])):
